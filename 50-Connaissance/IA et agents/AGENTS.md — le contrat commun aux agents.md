@@ -145,17 +145,19 @@ La différence avec le squelette tient en deux choses : **la commande de test un
 
 ## Une instance complète, prête à copier
 
-Le modèle ci-dessus existe aussi **rempli**, dans `90-Templates/instance-typescript/` — un `AGENTS.md` complet pour un SaaS TypeScript (Next.js, PostgreSQL, Prisma, Vitest, Playwright), sans aucun blanc à remplir, accompagné du `CLAUDE.md` de renvoi. Il ne reste qu'à le copier à la racine du dépôt.
+Le modèle ci-dessus existe aussi **rempli**, dans `90-Templates/instance-nestjs-fullstack/` — un `AGENTS.md` complet pour la pile réelle de Moh Amed (NestJS pour l'API, Vue ou React pour l'interface, SQLite en local et PostgreSQL en production), sans blanc à remplir à part le nom du produit, accompagné du `CLAUDE.md` de renvoi. Il ne reste qu'à le copier à la racine du dépôt.
 
 Ce que l'instance ajoute au modèle générique, parce que c'est là qu'un SaaS se casse réellement :
 
+- **PostgreSQL partout, la même version en local, dans les tests et en production** — décision prise avec Moh Amed : sa pile initiale annonçait SQLite en local, il a tranché pour un moteur unique. Le fichier conserve l'analyse du cas « deux moteurs » sous forme de règle : c'est précisément parce que la base locale qui diffère de la production **cache ses défauts jusqu'au déploiement** (types de colonnes acceptés par l'un et refusés par l'autre, JSON stocké de deux façons, requêtes valides sur un moteur et invalides sur l'autre) qu'un moteur unique est la règle, et non un confort.
 - **Multi-tenant** — toute requête sur des données d'organisation est filtrée par organisation ; une requête non filtrée est un défaut critique, pas un oubli. C'est la faille qui tue un SaaS B2B.
-- **Migrations** — une migration appliquée ne se modifie jamais ; toute migration destructive se demande avant, même en développement.
+- **Migrations** — une migration appliquée ne se modifie jamais, une migration destructrice se demande avant, chaque migration a un `down()` testé, la génération automatique se relit à la main, et les migrations tournent en étape unique du déploiement plutôt qu'au démarrage de chaque instance.
+- **Conventions NestJS** — DTO en classes et non en interfaces, validation à la frontière, gardes pour l'autorisation, aucune base atteinte depuis un contrôleur, erreurs de base (`23505`, `23503`) traduites en exceptions Nest.
 - **Facturation** — montants en centimes entiers, opérations idempotentes, l'état de l'abonnement fait foi chez le fournisseur de paiement.
-- **Données personnelles** — rien de personnel dans les journaux, export et suppression à la demande (RGPD).
+- **Données personnelles** — rien de personnel dans les journaux, export et suppression à la demande (RGPD), et une sauvegarde dont la restauration n'a jamais été testée n'est pas une sauvegarde.
 - **Déploiement** — conteneur Docker derrière Traefik en HTTPS, secrets par variables d'environnement, jamais dans l'image.
 
-Trois endroits seulement portent des choix de pile (bloc Pile et Commandes, Architecture, Déploiement) : si ta pile diffère, ce sont les seuls blocs à ajuster.
+Trois endroits seulement portent des choix de pile (bloc Pile et Commandes, Architecture, section base de données) : si ta pile diffère, ce sont les seuls blocs à ajuster.
 
 ## Mise en place
 
