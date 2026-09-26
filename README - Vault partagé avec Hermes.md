@@ -15,6 +15,7 @@ Ce dossier est un vault Obsidian lu et écrit par Hermes Agent.
 - `20-Scripts` — scripts et brouillons de vidéos/posts
 - `30-Sources` — sources, liens, recherches, citations
 - `40-Business` — projets, études de marché, business plan
+- `50-Connaissance` — connaissance réutilisable et veille technologique, rangée par domaine → [[Connaissance — Index]]
 - `80-Hermes` — espace personnel d'Hermes : fonctionnement de l'installation, conventions, journal de bord → [[Hermes — Index]]
 - `90-Templates` — modèles de notes réutilisables
 
@@ -26,6 +27,7 @@ Obsidian utilise les wikilinks : `[[Titre de la note]]`.
 
 - `30-Sources/Hostinger API/` — documentation complète de l'API Hostinger (392 endpoints, spec OpenAPI 1.54.2) : entrée par [[Hostinger API — Index]]
 - `40-Business/Étude SaaS 2026/` — étude de marché SaaS (10 créneaux examinés, notation, plan de validation à 14 jours) : entrée par [[Étude SaaS — Index]]
+- `50-Connaissance/IA et agents/` — cours sur le travail en équipe d'agents (Cursor, Claude Code, GitHub Copilot) et le rôle de manager : entrée par [[IA et agents — Index]]
 
 ## Test de connexion
 

@@ -47,6 +47,15 @@ Ce que j'ai fait dans ce vault, dans l'ordre, avec la preuve. Retour : [[Hermes 
 - J'ai revérifié le fait moi-même puis **corrigé l'étude** : la phrase « personne ne vend l'ensemble au prix d'une TPE » est retirée, le critère « faiblesse de la concurrence » passe de 3 à 2, le créneau de **32 à 31/40**, un J0 de qualification d'une heure et un cinquième critère d'arrêt sont ajoutés au protocole.
 - **Leçon retenue dans le skill `market-opportunity-scan`** (v1.1.0) : une veille qui ne corrige jamais l'étude n'est pas une veille. Le job a servi dès son premier run — c'est l'argument pour installer cette boucle systématiquement, pas seulement quand on y pense.
 
+### Branche « Connaissance » et premiers cours
+
+- Demande : une branche qui regroupe la veille technologique par domaines, avec pour première note des cours sur le travail d'agents en équipe (Cursor, Claude, GitHub Copilot) et le rôle de manager.
+- Structure créée : `50-Connaissance/` avec [[Connaissance — Index]] (les domaines, les conventions d'écriture) et le premier domaine `IA et agents` avec [[IA et agents — Index]].
+- Quatre cours écrits : [[Cursor — agents en équipe]], [[Claude Code — agents en équipe]], [[GitHub Copilot — agents en équipe]], [[Le manager d'équipe — orchestrer des agents]].
+- **Vérifié sur les documentations officielles** (consultées le 26/09/2026) et non de mémoire : Cursor (`cursor.com/docs/agent/subagents` — emplacements, compatibilité des dossiers `.claude/` et `.codex/`, champs `readonly` et `is_background`, exécution parallèle) et Claude Code (`docs.claude.com/en/docs/claude-code/sub-agents` — priorité des emplacements, `isolation: worktree`, `memory`, hooks de sous-agent, type `fork`, exécution en arrière-plan systématique) ; GitHub (`docs.github.com` — modes de démarrage de l'agent cloud, champ de consignes, API d'assignation GraphQL et son en-tête obligatoire).
+- **Séparation tenue** : ce qui est affirmé vient de la documentation officielle, ce qui vient de guides tiers est marqué « rapporté » dans les notes. Chaque cours porte sa date de vérification, parce que ces outils changent tous les mois.
+- Convention de la branche : une note par sujet, sources et date en tête et en pied, les pièges écrits noir sur blanc.
+
 ## Points ouverts
 
 - **Obsidian côté Windows** : l'installation du plugin Obsidian Git et le clone sont à confirmer côté PC (voir [[Hermes — Fonctionnement du vault]]).
