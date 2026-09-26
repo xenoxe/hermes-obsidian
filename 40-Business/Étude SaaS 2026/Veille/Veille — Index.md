@@ -19,7 +19,7 @@ Veille hebdomadaire du créneau retenu : **l'échéancier de conformité opposab
 
 ## Notes hebdomadaires
 
-*(les notes datées apparaissent ici au fil des semaines)*
+- [[Veille — 2026-09-26]] — 26 septembre 2026 · ALERTE : offre unifiée VGP-DUERP détectée à 0,50 €/équipement.
 
 ## Règle d'écriture
 
