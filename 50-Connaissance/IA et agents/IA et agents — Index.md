@@ -23,6 +23,7 @@ Sept rôles — PO, manager, dev front, dev back, testeur, relecteur de code, s�
 - [[Équipe complète — configs Claude Code]] — sept fichiers `.claude/agents/` avec les prompts détaillés, plus `CLAUDE.md`
 - [[Équipe complète — configs Cursor]] — les mêmes sept en `.cursor/agents/` (ou réutilisés depuis `.claude/agents/`, que Cursor lit), plus la règle `.cursor/rules/manager.mdc`
 - [[Équipe complète — configs GitHub Copilot]] — sept `.github/agents/`, `AGENTS.md`, et les cinq modèles d'issues qui servent de briefs
+- [[AGENTS.md — le contrat commun aux agents]] — le fichier lu par **tous** les agents : les huit sections, les frontières à trois niveaux, le modèle à copier et un exemple rempli
 
 **À lire une fois dans l'ordre** : [[Le manager d'équipe — orchestrer des agents]] (principes, valables partout), puis [[Équipe complète de livraison — mode d'emploi]] (les sept rôles et leurs contrats), puis la note de configuration de l'outil utilisé. Les trois cours de plateforme se lisent indépendamment.
 

@@ -40,3 +40,4 @@ Le suivi d'un projet en cours, les idées de contenu et les notes datées d'actu
 - [[Le manager d'équipe — orchestrer des agents]] — le rôle de coordination, commun aux trois outils
 - [[Équipe complète de livraison — mode d'emploi]] — sept rôles, leurs refus, l'ordre d'exécution, le rituel de vérification
 - [[Équipe complète — configs Claude Code]] · [[Équipe complète — configs Cursor]] · [[Équipe complète — configs GitHub Copilot]] — les sept rôles en fichiers prêts à copier
+- [[AGENTS.md — le contrat commun aux agents]] — le contrat unique lu par tous les agents : sections, frontières à trois niveaux, modèle et exemple

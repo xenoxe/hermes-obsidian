@@ -32,3 +32,7 @@ Obsidian utilise les wikilinks : `[[Titre de la note]]`.
 ## Test de connexion
 
 Écris une note depuis ton Obsidian, dis-moi son titre, et je la lirai depuis ici.
+
+## Pour les agents
+
+Ce dépôt porte un fichier `AGENTS.md` à sa racine : le contrat lu par tout agent qui travaille dans le vault — commandes de synchronisation, conventions de nommage, frontières (dont l'interdiction absolue de publier un secret) et définition de terminé. À lire avant toute écriture.

@@ -65,6 +65,13 @@ Ce que j'ai fait dans ce vault, dans l'ordre, avec la preuve. Retour : [[Hermes 
 - **Économie signalée** : Cursor lit aussi `.claude/agents/` (vérifié sur sa documentation). Une seule base de fichiers sert donc les deux outils ; `readonly` et `is_background` s'ajoutent côté Cursor là où c'est nécessaire.
 - **Réserves écrites noir sur blanc** : les noms d'outils du frontmatter Copilot n'ont pas pu être lus sur la page officielle (contenu non chargé) — deux sources tierces convergentes sont citées et la note renvoie à l'éditeur d'agents de GitHub pour confirmation. Les tarifs Copilot, Agent HQ et les workflows agentiques restent marqués « rapporté ».
 
+### Le contrat commun : AGENTS.md
+
+- Demande : écrire le `AGENTS.md` de projet. Le dépôt visé n'étant pas précisé, deux livrables plutôt qu'une question bloquante.
+- **Le modèle expliqué** : [[AGENTS.md — le contrat commun aux agents]] — les huit sections et ce que chacune empêche, les frontières à trois niveaux (et pourquoi « Demander avant » est le niveau qui protège réellement), le modèle complet à copier, un exemple rempli, les deux réserves (ce n'est **pas** une norme mais une convention ; trop long, il ne sert à rien), les pièges, et les deux questions qui vérifient en deux minutes qu'un agent le lit bien.
+- **L'instance réelle** : `AGENTS.md` à la racine de ce vault. Ce dépôt est un vrai dépôt git dans lequel un agent travaille, donc le fichier y est appliqué et non décrit : commandes de synchronisation, arborescence, conventions de nommage et de datation, frontières (avec l'interdiction absolue de publier un secret, qui est la raison d'être du hook `pre-commit`), définition de terminé et format du compte rendu.
+- **Vérifié** : le hook `pre-commit` a laissé passer ces deux fichiers sans alerte de secret — ce qui est le cas de test intéressant, puisqu'ils parlent de secrets, de `.env` et de clés sans jamais en contenir la valeur.
+
 ## Points ouverts
 
 - **Obsidian côté Windows** : l'installation du plugin Obsidian Git et le clone sont à confirmer côté PC (voir [[Hermes — Fonctionnement du vault]]).
