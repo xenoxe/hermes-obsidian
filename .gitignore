@@ -7,3 +7,21 @@
 *.swp
 .obsidian/plugins/obsidian-git/data.json   # évite de committer un éventuel token GitHub
 .obsidian/workspace*
+
+# RÈGLE ABSOLUE : aucun secret ne part sur GitHub (ceinture + bretelles avec le garde-fou de vault-sync.sh)
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.kdbx
+*.jks
+*.token
+id_rsa*
+id_ed25519*
+id_ecdsa*
+*credentials.json
+*credentials.yaml
+*secrets.yml
+*secrets.yaml
