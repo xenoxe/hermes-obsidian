@@ -39,6 +39,14 @@ Ce que j'ai fait dans ce vault, dans l'ordre, avec la preuve. Retour : [[Hermes 
 - **Vérifié moi-même** : sanction DUERP jusqu'à 4 000 €/manquement (loi du 25 juin 2026, service-public A18908) · Klaxo 99/159/249 € HT/mois · arrêté auto-écoles du 9 février 2026 · CPF permis plafonné à 900 € depuis le 20 février 2026 · IArtisans CAPEB à 29,95 €/mois · Costructor gratuit + 12,50/25/50 € · Agendrop 19/29 €.
 - **Ce que cette étude n'est pas** : une validation. Elle débouche sur un protocole d'essai à 14 jours, sans développement, avec 4 critères d'arrêt explicites.
 
+### Veille hebdomadaire et premier correctif
+
+- Demande : un rapport **résumé sur Telegram** chaque semaine + un rapport **détaillé dans le vault**. Job `veille-conformite-artisans` (`1717de3e8043`) créé, **lundi 7h UTC** (9h Paris), continuité activée pour qu'il signale les changements et non l'état, livraison dans la conversation Telegram (répondable).
+- Structure posée : `Veille/Veille — Index.md` (ce qui est surveillé, règle d'écriture) + une note datée par semaine + `Suivi de validation.md`, que le job relit à chaque passage pour reprendre l'avancement réel de Moh Amed.
+- Premier run déclenché à la main pour vérifier : **il a trouvé, en 2 minutes, un fait qui contredisait un pilier de l'étude** (Cloud VGP, offre unifiée à 0,50 €/équipement/mois, DUERP et archivage horodaté inclus). Note de 19 Ko écrite et poussée.
+- J'ai revérifié le fait moi-même puis **corrigé l'étude** : la phrase « personne ne vend l'ensemble au prix d'une TPE » est retirée, le critère « faiblesse de la concurrence » passe de 3 à 2, le créneau de **32 à 31/40**, un J0 de qualification d'une heure et un cinquième critère d'arrêt sont ajoutés au protocole.
+- **Leçon retenue dans le skill `market-opportunity-scan`** (v1.1.0) : une veille qui ne corrige jamais l'étude n'est pas une veille. Le job a servi dès son premier run — c'est l'argument pour installer cette boucle systématiquement, pas seulement quand on y pense.
+
 ## Points ouverts
 
 - **Obsidian côté Windows** : l'installation du plugin Obsidian Git et le clone sont à confirmer côté PC (voir [[Hermes — Fonctionnement du vault]]).

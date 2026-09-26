@@ -19,23 +19,27 @@ Retour : [[Étude SaaS — Index]] · 10 créneaux examinés le 26/09/2026.
 
 ## 1. Échéancier de conformité opposable — artisanat du bâtiment ✅ RETENU
 
-**Preuves vérifiées** : loi du 25 juin 2026 → défaut de DUERP sanctionné par une amende administrative jusqu'à **4 000 €** par manquement, applicable plusieurs fois selon le nombre de travailleurs, doublée en récidive, plus 7 500 € (15 000 € en récidive) au pénal (service-public.gouv.fr, A18908) · VGP appareils de levage tous les 12 mois, 6 mois pour chariots élévateurs, 3 mois pour certaines nacelles (arrêté du 1er mars 2004, art. 23) · attestation de vigilance URSSAF à vérifier **tous les 6 mois** pour tout contrat ≥ 5 000 € HT (urssaf.fr) · 621 803 entreprises artisanales du bâtiment dont 97 % de moins de 20 salariés (CAPEB).
+**Preuves vérifiées** : loi du 25 juin 2026 → défaut de DUERP sanctionné par une amende administrative jusqu'à **4 000 €** par manquement, applicable plusieurs fois selon le nombre de travailleurs, doublée en récidive, plus 7 500 € (15 000 € en récidive) au pénal (service-public.gouv.fr, A18908) · VGP (arrêté du 1er mars 2004, art. 23 et 24, texte reproduit par l'INERIS et Prevention BTP) : **12 mois** par défaut pour les appareils de levage, **6 mois** pour ceux listés aux II et III de l'article 20 — chariots élévateurs, nacelles PEMP, grues mobiles, grues auxiliaires de chargement sur véhicule, monte-matériaux, hayons, engins de terrassement équipés pour le levage — **3 mois** pour les appareils mus par la force humaine employée directement servant à élever un poste de travail, **12 mois** pour les accessoires de levage (élingues, crochets, manilles, palonniers) ; dans la pratique, la majorité du matériel d'un artisan tombe donc dans le seau des 6 mois · attestation de vigilance URSSAF à vérifier **tous les 6 mois** pour tout contrat ≥ 5 000 € HT (urssaf.fr) · 621 803 entreprises artisanales du bâtiment dont 97 % de moins de 20 salariés (CAPEB).
 
 **Ce qui se paie déjà, par briques** : Agendrop 19 €/mois (relances d'entretien) · Duerp APP 50 €/mois/module · GContact 99 €/mois (habilitations) · BatiFire 7,60 à 13,50 €/mois/bâtiment (registre de sécurité) · Kalindy à partir de 89 €/mois (conformité sous-traitance) · Provigis à partir de 650 €/an.
 
 **Preuve que le canal paie** : IArtisans by CAPEB, IA métier vendue aux adhérents **33,28 € HT/mois** (359,40 € HT/an, soit 29,95 €/mois) contre 49,90 €/mois prix public — la CAPEB distribue donc bien un abonnement logiciel à ses artisans.
+
+**Correctif du 26/09/2026 — un concurrent couvre déjà l'ensemble** : Cloud VGP (éditeur français, STATION F ; `controle-reglementaire.fr`, `cloud-vgp.fr`, `logiciel-vgp.com`) affiche **0,50 € HT/mois par équipement actif**, dégressif jusqu'à 0,25 € (3,60 € HT/équipement/an), **gratuit** sous 13 500 € HT de CA annuel, utilisateurs et contrôles illimités. Couverture revendiquée sur leurs pages : échéanciers VGP par équipement calés sur les textes (arrêté du 1er mars 2004, R.4323-22 à R.4323-28), alertes avant échéance, registre de sécurité dématérialisé, **archivage horodaté exportable**, mobile hors ligne, veille réglementaire, conformité Facture X, agents IA incluant le DUERP. 2 000+ contrôleurs et 25 000+ professionnels revendiqués. Leur cible affichée reste le **contrôleur, le bureau de contrôle et le responsable QSE**, mais ils écrivent aussi viser « un artisan qui gère 20 équipements » et se présentent comme « le logiciel VGP gratuit pour artisans et indépendants ». Leur modèle au matériel est structurellement moins cher qu'un abonnement fixe de TPE : 20 équipements ≈ 10 € HT/mois.
+
+**Conséquence sur la notation** : le critère « faiblesse de la concurrence » passe de 3 à 2 et le créneau de 32 à **31/40** — l'écart avec les auto-écoles (29/40) devient mince, ce qui doit se dire plutôt que se lisser. Le critère d'arrêt n° 3 (« offre unifiée ≤ 39 € HT/mois ») est **déclenché sur le prix** ; à qualifier en une heure d'essai gratuit avant tout développement.
 
 | Critère | Note | Commentaire |
 |---|---|---|
 | Marché accessible | 5 | 621 803 entreprises artisanales du bâtiment |
 | Déclencheur daté | 5 | Sanction DUERP en vigueur, VGP et vigilance périodiques, e-facturation 2027 |
 | Disposition à payer | 3 | Prouvée par briques, **non prouvée pour le bundle** |
-| Faiblesse concurrence | 3 | Chaque brique occupée, personne sur l'ensemble à prix TPE |
+| Faiblesse concurrence | 2 | Chaque brique occupée, et Cloud VGP couvre déjà l'ensemble à 0,50 €/équipement |
 | Défendabilité solo | 4 | Règles métier + intégrations + preuve horodatée = pas copiable en un prompt |
 | Canal | 4 | CAPEB, FFB, assureurs, experts-comptables, distributeurs matériel |
 | Délai 1er euro | 4 | Vente possible en direct dès la V1 |
 | Risque réglementaire | 4 | Obligations existantes et renforcées, pas de report possible |
-| **Total** | **32/40** | |
+| **Total** | **31/40** | |
 
 ## 2. Auto-écoles — deuxième choix
 
@@ -111,7 +115,7 @@ Besoin réel (nettoyage SIREN/SIRET, surveillance de l'annuaire, supervision des
 
 | Rang | Créneau | Total |
 |---|---|---|
-| 1 | Échéancier de conformité opposable — artisanat du bâtiment | **32/40** |
+| 1 | Échéancier de conformité opposable — artisanat du bâtiment | **31/40** |
 | 2 | Auto-écoles | 29/40 |
 | 3 | Pompes funèbres | 26/40 |
 | 4 | Syndics bénévoles | 25/40 |
