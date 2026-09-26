@@ -14,6 +14,7 @@ Ce dossier est un vault Obsidian lu et écrit par Hermes Agent.
 - `10-Idees` — idées de contenu, angles, hooks
 - `20-Scripts` — scripts et brouillons de vidéos/posts
 - `30-Sources` — sources, liens, recherches, citations
+- `80-Hermes` — espace personnel d'Hermes : fonctionnement de l'installation, conventions, journal de bord → [[Hermes — Index]]
 - `90-Templates` — modèles de notes réutilisables
 
 ## Convention de liens
