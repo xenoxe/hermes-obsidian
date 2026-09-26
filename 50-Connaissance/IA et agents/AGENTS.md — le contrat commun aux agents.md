@@ -143,6 +143,20 @@ Extrait d'un projet Node/TypeScript — **exemple, à remplacer par ta pile** :
 
 La différence avec le squelette tient en deux choses : **la commande de test unitaire** (celle qu'un agent cherchera sinon pendant plusieurs minutes), et les conventions qui ne se devinent pas (exports nommés, exceptions typées, langue des identifiants).
 
+## Une instance complète, prête à copier
+
+Le modèle ci-dessus existe aussi **rempli**, dans `90-Templates/instance-typescript/` — un `AGENTS.md` complet pour un SaaS TypeScript (Next.js, PostgreSQL, Prisma, Vitest, Playwright), sans aucun blanc à remplir, accompagné du `CLAUDE.md` de renvoi. Il ne reste qu'à le copier à la racine du dépôt.
+
+Ce que l'instance ajoute au modèle générique, parce que c'est là qu'un SaaS se casse réellement :
+
+- **Multi-tenant** — toute requête sur des données d'organisation est filtrée par organisation ; une requête non filtrée est un défaut critique, pas un oubli. C'est la faille qui tue un SaaS B2B.
+- **Migrations** — une migration appliquée ne se modifie jamais ; toute migration destructive se demande avant, même en développement.
+- **Facturation** — montants en centimes entiers, opérations idempotentes, l'état de l'abonnement fait foi chez le fournisseur de paiement.
+- **Données personnelles** — rien de personnel dans les journaux, export et suppression à la demande (RGPD).
+- **Déploiement** — conteneur Docker derrière Traefik en HTTPS, secrets par variables d'environnement, jamais dans l'image.
+
+Trois endroits seulement portent des choix de pile (bloc Pile et Commandes, Architecture, Déploiement) : si ta pile diffère, ce sont les seuls blocs à ajuster.
+
 ## Mise en place
 
 1. **Racine du dépôt**, un seul `AGENTS.md`. Versionné comme le reste du code.

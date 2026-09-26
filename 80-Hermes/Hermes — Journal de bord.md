@@ -72,6 +72,14 @@ Ce que j'ai fait dans ce vault, dans l'ordre, avec la preuve. Retour : [[Hermes 
 - **L'instance réelle** : `AGENTS.md` à la racine de ce vault. Ce dépôt est un vrai dépôt git dans lequel un agent travaille, donc le fichier y est appliqué et non décrit : commandes de synchronisation, arborescence, conventions de nommage et de datation, frontières (avec l'interdiction absolue de publier un secret, qui est la raison d'être du hook `pre-commit`), définition de terminé et format du compte rendu.
 - **Vérifié** : le hook `pre-commit` a laissé passer ces deux fichiers sans alerte de secret — ce qui est le cas de test intéressant, puisqu'ils parlent de secrets, de `.env` et de clés sans jamais en contenir la valeur.
 
+### L'instance complète : AGENTS.md pour un SaaS TypeScript
+
+- Demande : « une version complète et utilisable ». La pile n'étant pas donnée, je ne l'ai pas inventée au hasard : je suis allé regarder ses dépôts publics (`api.github.com/users/xenoxe/repos`) — le plus récent est en **TypeScript** (`mail`), et son VPS fait tourner Traefik et un registre Docker. Pile retenue : TypeScript strict, Next.js, PostgreSQL, Prisma, Vitest, Playwright, pnpm, déploiement Docker derrière Traefik.
+- Livrable : `90-Templates/instance-typescript/AGENTS.md` — **aucun blanc à remplir**, prêt à copier à la racine d'un dépôt — et `CLAUDE.md`, le fichier de renvoi pour les outils qui lisent ce nom-là.
+- Contenu au-delà du modèle générique, là où un SaaS se casse réellement : multi-tenant (toute requête filtrée par organisation, la faille qui tue un SaaS B2B) · migrations (jamais modifier une migration appliquée, jamais de migration destructive sans accord) · facturation (centimes entiers, idempotence, l'état de l'abonnement fait foi chez le fournisseur) · RGPD (rien de personnel dans les journaux, export et suppression à la demande) · déploiement (Docker derrière Traefik en HTTPS, secrets hors de l'image).
+- **L'hypothèse est écrite en tête du fichier et en fin de fichier** : ce qui dépend de la pile se limite à trois blocs (Pile et Commandes, Architecture, Déploiement), le reste ne dépend pas du cadre.
+- **Effet de bord observé et traité** : un fichier nommé `AGENTS.md` rangé dans le vault est chargé comme contexte de dossier par tout agent travaillant à cet endroit — Hermes l'a fait immédiatement après l'écriture. Une note d'avertissement en première ligne du modèle, plus une mention explicite dans le `AGENTS.md` du vault, évitent qu'un agent prenne ce modèle pour le contrat du vault.
+
 ## Points ouverts
 
 - **Obsidian côté Windows** : l'installation du plugin Obsidian Git et le clone sont à confirmer côté PC (voir [[Hermes — Fonctionnement du vault]]).
