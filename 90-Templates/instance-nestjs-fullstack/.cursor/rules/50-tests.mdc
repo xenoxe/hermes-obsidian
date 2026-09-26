@@ -1,0 +1,15 @@
+---
+description: Règles d'écriture des tests
+globs:
+  - '**/*.spec.ts'
+  - '**/*.test.ts'
+  - e2e/**
+---
+
+- **API : Jest** (`@nestjs/testing`, `Test.createTestingModule`) et **Supertest** pour les contrôleurs. Ne pas simuler le module entier : seulement les dépendances directes.
+- **Interface : Vitest**. **Bout en bout : Playwright**.
+- Un test par comportement, nommé par le comportement attendu, jamais par le nom de la fonction.
+- Les tests d'intégration tournent contre la base de test (`docker compose up -d db-test`), jamais la base de développement.
+- **Chemins d'erreur obligatoires** : entrée invalide, entrée vide, champ non déclaré rejeté par le pipe, absence d'authentification, accès à une ressource d'une autre organisation, ressource absente, quota dépassé.
+- Trois scénarios de bout en bout toujours verts : inscription, connexion, première souscription.
+- On n'affaiblit jamais un test, on ne le marque pas ignoré, on ne désactive pas une vérification de types pour faire passer la construction.

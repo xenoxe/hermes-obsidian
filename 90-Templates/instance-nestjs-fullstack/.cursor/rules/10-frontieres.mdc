@@ -1,0 +1,35 @@
+---
+description: Frontières du projet — Toujours / Demander avant / Jamais
+alwaysApply: true
+---
+
+## Toujours
+
+- `test`, `typecheck` et `lint` passent, lancés par celui qui l'affirme.
+- Lire les fichiers voisins avant d'écrire, suivre les motifs existants du module.
+- Un DTO en classe avec décorateurs de validation pour toute entrée nouvelle.
+- Filtrer par organisation toute requête sur une table d'organisation.
+- Committer sur sa propre branche, un sujet par branche.
+- Nommer dans le rapport final : fichiers touchés, commandes lancées, résultat réel.
+
+## Demander avant
+
+- Modifier le schéma de base de données, ou écrire une migration destructive.
+- Ajouter une dépendance, même petite, même « évidente ».
+- Modifier le contrat d'API : une route existante, la forme d'une réponse, un type de `shared/`.
+- Toucher à l'authentification, à l'autorisation, aux jetons, aux webhooks, à la facturation, aux quotas.
+- Modifier la CI, le `Dockerfile`, la configuration Traefik, les variables d'environnement.
+- Découper ou renommer un module. Changer la version majeure de PostgreSQL.
+
+## Jamais
+
+- Lire, écrire ou recopier un `.env`, une clé, un jeton, un certificat, une chaîne de connexion — même dans un test ou un commentaire.
+- `synchronize: true` sur une base qui contient des données réelles.
+- Modifier une migration déjà appliquée, ou viser la production depuis une commande locale.
+- Une requête sur une table d'organisation sans filtre par organisation.
+- Accéder à la base depuis un contrôleur ou depuis un composant d'interface.
+- Un DTO en `interface`, ou une propriété sans décorateur de validation.
+- `any`, une règle ESLint désactivée, un contrôle de types contourné.
+- Un type de colonne qui n'existe pas dans PostgreSQL. Un calcul monétaire en flottant.
+- `push --force`, réécrire l'historique, supprimer une branche, fusionner sans relecture humaine.
+- Désactiver, ignorer ou affaiblir un test.

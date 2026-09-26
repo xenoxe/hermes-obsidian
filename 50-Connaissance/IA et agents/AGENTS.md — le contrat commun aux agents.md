@@ -145,7 +145,15 @@ La différence avec le squelette tient en deux choses : **la commande de test un
 
 ## Une instance complète, prête à copier
 
-Le modèle ci-dessus existe aussi **rempli**, dans `90-Templates/instance-nestjs-fullstack/` — un `AGENTS.md` complet pour la pile réelle de Moh Amed (NestJS pour l'API, Vue ou React pour l'interface, SQLite en local et PostgreSQL en production), sans blanc à remplir à part le nom du produit, accompagné du `CLAUDE.md` de renvoi. Il ne reste qu'à le copier à la racine du dépôt.
+Le modèle ci-dessus existe aussi **rempli, en arborescence complète**, dans `90-Templates/instance-nestjs-fullstack/` — pour la pile réelle de Moh Amed (NestJS pour l'API, Vue ou React pour l'interface, PostgreSQL partout). Ce n'est plus un fichier isolé mais un dossier à copier tel quel à la racine d'un dépôt :
+
+- `AGENTS.md` et `CLAUDE.md` — le contrat et son renvoi
+- `.claude/agents/` — sept agents avec leur frontmatter complet (`tools`, `model`, `permissionMode`, `maxTurns`, `isolation: worktree`)
+- `.cursor/agents/` + `.cursor/rules/` — six agents et **six règles** (doctrine du manager, frontières, API NestJS, base de données, interface, tests)
+- `.github/agents/`, `.github/copilot-instructions.md`, `.github/ISSUE_TEMPLATE/` — sept agents Copilot et cinq modèles d'issues
+- `specs/`, `reviews/` — les dossiers de travail où circulent les artefacts entre agents
+
+Les corps de prompt des agents sont **générés depuis une source unique** : ils ne peuvent pas diverger d'un outil à l'autre. Une notice (`README — comment copier cette instance.md`) explique la copie, ce qu'il reste à remplir, et le point structurel du manager — un sous-agent ne pouvant pas en engendrer d'autres, il est la session principale sous Claude Code, une règle sous Cursor, et un agent qui produit des ordres de travail sous Copilot.
 
 Ce que l'instance ajoute au modèle générique, parce que c'est là qu'un SaaS se casse réellement :
 

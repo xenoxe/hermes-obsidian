@@ -1,0 +1,15 @@
+---
+description: Conventions de l'API NestJS
+globs:
+  - api/**/*.ts
+---
+
+- **DTO = classes, jamais des interfaces.** Les décorateurs de `class-validator` ne s'appliquent qu'à des instances de classe. Une interface ne valide rien.
+- Chaque propriété d'un DTO porte au moins un décorateur de validation. `@IsOptional()` pour un champ facultatif, jamais le seul `?`. `@ValidateNested()` + `@Type(() => SousDto)` pour un objet imbriqué.
+- `ValidationPipe` global : `whitelist: true`, `forbidNonWhitelisted: true`, `transform: true`. Une propriété non déclarée est rejetée, pas ignorée.
+- **Contrôleurs minces** : recevoir, déléguer au service, renvoyer. Aucun accès à la base depuis un contrôleur.
+- L'autorisation vit dans les **gardes**, jamais dans le corps du contrôleur.
+- Une **exception Nest** pour tout échec attendu. Traduire les erreurs de base : `23505` → `ConflictException`, `23503` → `BadRequestException`. L'utilisateur ne voit jamais un message de PostgreSQL.
+- Une **forme d'erreur unique** pour toute l'API, produite par un filtre d'exception global. Jamais de trace de pile dans une réponse.
+- Un module par domaine. Pas de `forwardRef()` : une dépendance circulaire se règle en restructurant.
+- L'API expose les types de `shared/`, jamais ceux de l'ORM.

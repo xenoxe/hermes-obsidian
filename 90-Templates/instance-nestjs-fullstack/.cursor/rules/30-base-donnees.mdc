@@ -1,0 +1,20 @@
+---
+description: PostgreSQL partout et discipline des migrations
+globs:
+  - api/**/migrations/**
+  - api/prisma/**
+  - api/src/**/*.entity.ts
+  - docker-compose.yml
+---
+
+**Un seul moteur, la même version majeure en local, dans les tests et en production.** Ce qui passe en local est ce qui tournera en production.
+
+- Version épinglée (`postgres:16`), jamais `latest`, et la **même image** partout.
+- La base locale tourne réellement (`docker compose up -d db`) : l'API ne démarre pas sans elle, pas de mode dégradé silencieux.
+- **Types de colonnes explicites** pour tout champ ambigu (union, `| null` inclus) : la réflexion TypeScript rend `Object`, l'ORM ne sait pas choisir de type, et l'application refuse de démarrer.
+- Aucun type de colonne emprunté à un autre moteur (`datetime` au lieu de `timestamp`).
+- `jsonb` : une conversion `text → jsonb` exige une clause `USING` que les diffs automatiques ne génèrent pas — elle s'écrit à la main.
+- Énumérations : préférer un `varchar` validé par DTO et une contrainte `CHECK` à un type enum de base, plus simple à faire évoluer.
+- Index sur toute colonne filtrée ou triée, et sur les clés étrangères. Pagination par curseur, jamais `OFFSET` en profondeur.
+- Pool de connexions dimensionné explicitement en production.
+- **Migrations** : jamais modifiée après application (suivi par nom de fichier) · toujours un `down()` testé · le diff automatique se relit à la main · exécution en étape unique du déploiement, jamais au démarrage de chaque instance · attention aux verrous d'un `ALTER TABLE` qui réécrit une grande table (procéder par étapes).

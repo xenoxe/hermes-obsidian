@@ -1,0 +1,13 @@
+---
+description: Conventions de l'interface
+globs:
+  - web/**
+---
+
+- **Un seul client d'API typé** dans `web/src/api/`, qui consomme les types de `shared/`. Aucun `fetch` dispersé dans les composants.
+- Aucune logique métier dans un composant : il affiche et il remonte des événements.
+- État partagé dans `stores/` (Pinia) ou `hooks/` (React), pas dans les composants.
+- Identifiants en anglais, textes affichés en français via le fichier de traduction. Aucun texte en dur dans un composant.
+- Montants reçus en centimes et affichés en euros ; **aucun calcul monétaire côté interface**, les totaux viennent de l'API.
+- Dates reçues en ISO 8601 UTC, affichées en `jj/mm/aaaa`.
+- Nommage : `ComposantEnPascalCase.vue|tsx`, `utilitaireEnCamelCase.ts`, `dossier-en-kebab-case/`.

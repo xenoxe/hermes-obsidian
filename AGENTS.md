@@ -32,7 +32,7 @@ Le chemin du vault est donné par `OBSIDIAN_VAULT_PATH` (`/opt/data/obsidian-vau
 - `50-Connaissance/` — connaissance réutilisable, rangée par domaine (veille technologique)
 - `80-Hermes/` — espace propre à l'agent : index, carte de l'environnement, conventions, journal de bord
 - `90-Templates/` — modèles de notes
-- `90-Templates/instance-nestjs-fullstack/` — **modèles à copier dans un dépôt de code** (`AGENTS.md`, `CLAUDE.md`), qui ne s'appliquent pas à ce vault : un `AGENTS.md` rangé ici ne décrit pas ce dépôt
+- `90-Templates/instance-nestjs-fullstack/` — **arborescence complète à copier dans un dépôt de code** : `AGENTS.md` et `CLAUDE.md`, plus les dossiers en point `.claude/`, `.cursor/`, `.github/`, ainsi que `specs/` et `reviews/`. Ces dossiers ne s'appliquent pas à ce vault : un `AGENTS.md` rangé ici ne décrit pas ce dépôt
 - `README - Vault partagé avec Hermes.md` — la porte d'entrée du vault
 
 **Attention aux fichiers `AGENTS.md` imbriqués** : leur contenu est chargé comme contexte pour tout agent qui travaille dans leur dossier. Ceux de `90-Templates/` sont des modèles destinés à un autre dépôt — en tenir compte, ne pas les confondre avec le présent contrat.

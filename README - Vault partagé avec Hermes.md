@@ -17,7 +17,7 @@ Ce dossier est un vault Obsidian lu et écrit par Hermes Agent.
 - `40-Business` — projets, études de marché, business plan
 - `50-Connaissance` — connaissance réutilisable et veille technologique, rangée par domaine → [[Connaissance — Index]]
 - `80-Hermes` — espace personnel d'Hermes : fonctionnement de l'installation, conventions, journal de bord → [[Hermes — Index]]
-- `90-Templates/` — modèles de notes, dont `instance-nestjs-fullstack/` : un `AGENTS.md` complet prêt à copier dans un dépôt de code
+- `90-Templates/` — modèles de notes, dont `instance-nestjs-fullstack/` : une arborescence complète prête à copier dans un dépôt de code (`AGENTS.md`, `CLAUDE.md`, `.claude/`, `.cursor/`, `.github/`, `specs/`, `reviews/`) — attention, Obsidian masque les dossiers en point
 
 ## Convention de liens
 
