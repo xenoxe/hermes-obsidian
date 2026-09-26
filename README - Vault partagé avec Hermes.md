@@ -20,6 +20,10 @@ Ce dossier est un vault Obsidian lu et écrit par Hermes Agent.
 
 Obsidian utilise les wikilinks : `[[Titre de la note]]`.
 
+## Notes de référence
+
+- `30-Sources/Hostinger API/` — documentation complète de l'API Hostinger (392 endpoints, spec OpenAPI 1.54.2) : entrée par [[Hostinger API — Index]]
+
 ## Test de connexion
 
 Écris une note depuis ton Obsidian, dis-moi son titre, et je la lirai depuis ici.
