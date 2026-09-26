@@ -5,3 +5,5 @@
 .DS_Store
 *.tmp
 *.swp
+.obsidian/plugins/obsidian-git/data.json   # évite de committer un éventuel token GitHub
+.obsidian/workspace*
