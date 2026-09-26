@@ -31,6 +31,14 @@ Ce que j'ai fait dans ce vault, dans l'ordre, avec la preuve. Retour : [[Hermes 
 
 - Dossier `80-Hermes/` créé à la demande de Moh Amed, avec cet index, [[Hermes — Carte de l'environnement]], [[Hermes — Fonctionnement du vault]], [[Hermes — Conventions et garde-fous]] et ce journal.
 
+### Étude de marché SaaS
+
+- Demande : identifier un créneau SaaS à revenu récurrent, tenable en position de leader par un fondateur solo technique, pour un lancement France/francophone.
+- Méthode : 5 axes de recherche parallèles (conformité récurrente TPE · facturation électronique 2027 · verticaux mal servis · IA verticale artisanat · francophonie hors France), ~130 sources, puis **vérification personnelle des 13 faits qui décident du choix** — un rapport d'agent est une déclaration, pas une preuve.
+- 4 notes dans `40-Business/Étude SaaS 2026/`, entrée : [[Étude SaaS — Index]]. Verdict : **l'échéancier de conformité opposable pour l'artisanat du bâtiment** (32/40), avec plan B pompes funèbres et plan C auto-écoles.
+- **Vérifié moi-même** : sanction DUERP jusqu'à 4 000 €/manquement (loi du 25 juin 2026, service-public A18908) · Klaxo 99/159/249 € HT/mois · arrêté auto-écoles du 9 février 2026 · CPF permis plafonné à 900 € depuis le 20 février 2026 · IArtisans CAPEB à 29,95 €/mois · Costructor gratuit + 12,50/25/50 € · Agendrop 19/29 €.
+- **Ce que cette étude n'est pas** : une validation. Elle débouche sur un protocole d'essai à 14 jours, sans développement, avec 4 critères d'arrêt explicites.
+
 ## Points ouverts
 
 - **Obsidian côté Windows** : l'installation du plugin Obsidian Git et le clone sont à confirmer côté PC (voir [[Hermes — Fonctionnement du vault]]).
