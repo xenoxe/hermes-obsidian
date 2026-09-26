@@ -56,6 +56,15 @@ Ce que j'ai fait dans ce vault, dans l'ordre, avec la preuve. Retour : [[Hermes 
 - **Séparation tenue** : ce qui est affirmé vient de la documentation officielle, ce qui vient de guides tiers est marqué « rapporté » dans les notes. Chaque cours porte sa date de vérification, parce que ces outils changent tous les mois.
 - Convention de la branche : une note par sujet, sources et date en tête et en pied, les pièges écrits noir sur blanc.
 
+### Équipe d'agents complète — les configs
+
+- Demande : ajouter des exemples de configuration pour une équipe entière — un PO, un manager, un dev front, un dev back, un testeur, un relecteur et un responsable sécurité — afin de livrer du code propre et fonctionnel.
+- Note de doctrine : [[Équipe complète de livraison — mode d'emploi]] — les sept rôles, ce que chacun **possède** et ce qu'il **refuse** de faire, les artefacts qui leur servent d'interface (`specs/`, `PLAN.md`, `reviews/`), l'ordre d'exécution, et le rituel de vérification du manager avec ses commandes réelles.
+- Trois notes de configuration, une par outil : [[Équipe complète — configs Claude Code]] (sept fichiers `.claude/agents/` avec les prompts détaillés), [[Équipe complète — configs Cursor]], [[Équipe complète — configs GitHub Copilot]] (plus les cinq modèles d'issues qui tiennent lieu de briefs).
+- **Point structurel vérifié et intégré** : dans Claude Code comme dans Cursor, un sous-agent **ne peut pas** en engendrer d'autres. Le manager ne peut donc pas être un fichier d'agent parmi les autres — il est la session principale (`claude --agent manager`, ou une règle `.cursor/rules/manager.mdc`). Seuls les *agent teams* expérimentaux de Claude Code permettent une coordination entre agents.
+- **Économie signalée** : Cursor lit aussi `.claude/agents/` (vérifié sur sa documentation). Une seule base de fichiers sert donc les deux outils ; `readonly` et `is_background` s'ajoutent côté Cursor là où c'est nécessaire.
+- **Réserves écrites noir sur blanc** : les noms d'outils du frontmatter Copilot n'ont pas pu être lus sur la page officielle (contenu non chargé) — deux sources tierces convergentes sont citées et la note renvoie à l'éditeur d'agents de GitHub pour confirmation. Les tarifs Copilot, Agent HQ et les workflows agentiques restent marqués « rapporté ».
+
 ## Points ouverts
 
 - **Obsidian côté Windows** : l'installation du plugin Obsidian Git et le clone sont à confirmer côté PC (voir [[Hermes — Fonctionnement du vault]]).

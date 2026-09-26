@@ -15,7 +15,16 @@ Domaine qui rassemble tout ce qui touche aux agents de code, à l'orchestration 
 - [[GitHub Copilot — agents en équipe]] — agent mode contre coding agent, agents personnalisés, Agent HQ et Mission Control
 - [[Le manager d'équipe — orchestrer des agents]] — le rôle de coordination : décomposer, distribuer, vérifier ; ce que les trois outils ont en commun et où chacun diverge
 
-**Ordre de lecture conseillé** : commencer par [[Le manager d'équipe — orchestrer des agents]] (les principes, valables partout), puis la plateforme qu'on utilise réellement. Les trois cours de plateforme se lisent indépendamment.
+## Une équipe complète, prête à copier
+
+Sept rôles — PO, manager, dev front, dev back, testeur, relecteur de code, sécurité — pour livrer du code propre et fonctionnel.
+
+- [[Équipe complète de livraison — mode d'emploi]] — le rôle de chacun, ce qu'il possède, ce qu'il **refuse** de faire, l'ordre d'exécution, le rituel de vérification du manager, le piège du chiffre sept
+- [[Équipe complète — configs Claude Code]] — sept fichiers `.claude/agents/` avec les prompts détaillés, plus `CLAUDE.md`
+- [[Équipe complète — configs Cursor]] — les mêmes sept en `.cursor/agents/` (ou réutilisés depuis `.claude/agents/`, que Cursor lit), plus la règle `.cursor/rules/manager.mdc`
+- [[Équipe complète — configs GitHub Copilot]] — sept `.github/agents/`, `AGENTS.md`, et les cinq modèles d'issues qui servent de briefs
+
+**À lire une fois dans l'ordre** : [[Le manager d'équipe — orchestrer des agents]] (principes, valables partout), puis [[Équipe complète de livraison — mode d'emploi]] (les sept rôles et leurs contrats), puis la note de configuration de l'outil utilisé. Les trois cours de plateforme se lisent indépendamment.
 
 ## À compléter au fil de la veille
 
