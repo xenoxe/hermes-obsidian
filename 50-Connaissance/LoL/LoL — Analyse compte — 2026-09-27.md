@@ -45,6 +45,7 @@ Sept champions joués plus d'une fois, onze en tout, sur 50 parties : le pool es
 - Repère de coaching : **≤ 4 morts/partie** pour un joueur qui monte. Il est 50 % au-dessus.
 - **24 % de ses 17 dernières parties à 8 morts ou plus** (4/17) : ce sont les parties qu'il perd presque seul, en portant un champion fragile.
 - Le contraste est net *à l'intérieur* de son pool : Shyvana 5,0 morts (KDA 3,23) contre Master Yi **8,6** et Nocturne 7,0. Le niveau de risque dépend du champion choisi, pas de la partie.
+- **Ce que coûte une mort, chiffré sur ses 17 dernières classées** : **≤ 4 morts → 6 V / 2 D (75 %) · 5 morts → 1 V / 1 D · ≥ 6 morts → 2 V / 5 D (29 %)**. Morts moyennes : 4,56 dans les victoires contre 7,25 dans les défaites. Échantillon petit (17 parties, source tierce) : à confirmer par la timeline de l'API, mais un écart 75 % / 29 % est trop large pour être du bruit.
 - **Ce n'est ni le farm ni la laning phase** : CS/m 7,7 (repère jungle 5,5–7, il est au-dessus) et GD@15 **+377**, positif. Les morts arrivent après, au moment où il devrait convertir son avance. Cohérent avec les données, **non démontré** : il faut la timeline des parties pour trancher (voir ci-dessous).
 
 ## Défaut n°2 — trois champions, pas onze
@@ -83,5 +84,6 @@ Aligné sur la lecture du patch 26.19 ([[LoL — Patch 26.19 — impacts]]) :
 
 ## Suite
 
+- **Re-contrôle du 2026-09-27 (~12:30 UTC)** : aucune nouvelle partie classée depuis le relevé du matin (la plus récente date de **7 jours**) — l'échantillon reste celui des 50 parties, et la dernière ligne droite de progression affichée est +129 LP sur 30 jours. Côté clé Riot : toujours rien de lisible (`probe` → absente ; la ligne `RIOT_API_KEY=` du `.env` racine est **vide**, et une clé collée dans le chat arrive **masquée** côté agent → Riot répond `401 Unknown apikey`). `riot_fetch.py` lit désormais les fichiers `.env` directement (l'environnement des commandes n'en hérite pas), donc il suffit de coller la valeur après le `=`.
 - Remettre la clé API Riot → `riot_fetch.py fetch --count 20 --timeline` puis `review` : répartition des morts, part des dégâts, KP, diff d'or à 14 min.
 - Écrire `[[LoL — Shyvana — fiche]]` et `[[LoL — Briar — fiche]]` avec les taux par objet et les matchups.
