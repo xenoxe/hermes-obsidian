@@ -111,6 +111,15 @@ Ce que j'ai fait dans ce vault, dans l'ordre, avec la preuve. Retour : [[Hermes 
 - **Vérifié** : script testé hors-ligne sur un jeu de données factice (agrégats, timelines) et sur les erreurs 401/403/404 ; `versions` → patch live 26.19 (= Data Dragon 16.19.1) ; skills chargés et réponse obtenue depuis le profil ; envoi Telegram sortant OK ; notes écrites dans `50-Connaissance/LoL/` (index, veille, patch 26.19, analyse de compte).
 - **Ouvert** : `RIOT_API_KEY` absente du `.env` du profil (clé de développement à régénérer toutes les 24 h) — sans elle, l'analyse de compte passe par deeplol.gg (source tierce) et la maîtrise par champion n'est pas mesurée via l'API. Le token du bot a transité dans le chat : à régénérer via BotFather puis à remettre dans le `.env`.
 
+### PFE AdShield : bloqueur de publicité réseau (projet de fin d'études de Moh Amed)
+
+- Demande : programme qui bloque les pubs Twitch « et autres » pour son projet de fin d'études. Cadré par questions : livrable **bloqueur DNS/hosts + extension**, services visés **Twitch + YouTube**, **rendu en moins d'un mois**.
+- Point de vérité posé d'entrée : le DNS **ne peut pas** supprimer les pubs du direct (Twitch et YouTube insèrent la pub dans le flux, SSAI) — vérifié sur le wiki de TTV LOL PRO et les dépôts TwitchAdSolutions. Le projet est donc cadré sur ce qui est réellement bloquable, avec la limite documentée.
+- Construit `/opt/data/projects/adshield` (Node 26 + TypeScript, zéro dépendance d'exécution) : moteur DNS UDP+TCP écrit à la main (parsing, réponses, cache TTL, relais avec suivi des requêtes en vol), listes multi-format avec allowlist prioritaire, stats SQLite (`node:sqlite`), API HTTP + tableau de bord HTML autonome, scripts de récupération de listes et de mesure A/B.
+- Notes écrites dans `40-Business/PFE AdShield 2026/` (nouveau dossier) : [[PFE AdShield — Index]] et [[PFE AdShield — Architecture et limites]].
+- **Vérifié** : `tsc --noEmit` propre ; **16/16 tests** dont un bout-en-bout sans Internet (upstream factice : blocage, sous-domaine, exception, cache, stats) ; listes réelles fusionnées = **127 846 domaines** ; serveur lancé réellement et interrogé depuis un resolver client → `doubleclick.net`, `googlesyndication.com`, `scorecardresearch.com`, `ads.twitch.tv`, `spade.twitch.tv` renvoient `0.0.0.0`, tandis que `twitch.tv`, `usher.ttvnw.net`, `static-cdn.jtvnw.net`, `youtube.com`, `googlevideo.com` passent normalement ; API `/api/health`, `/api/stats`, `/api/domains` et tableau de bord (HTTP 200) répondent.
+- **Ouvert** : extension navigateur MV3 (Firefox visé) à écrire ; mesure de latence à refaire sur son réseau (celle du conteneur n'est pas concluante) ; décision à prendre sur la partie « pubs in-stream » (limite documentée ou module HLS, ce dernier contraire aux CGU de Twitch) ; aucun index de premier niveau dans `40-Business/`, la note d'entrée est donc celle du sous-dossier.
+
 ## Points ouverts
 
 - **Obsidian côté Windows** : l'installation du plugin Obsidian Git et le clone sont à confirmer côté PC (voir [[Hermes — Fonctionnement du vault]]).
