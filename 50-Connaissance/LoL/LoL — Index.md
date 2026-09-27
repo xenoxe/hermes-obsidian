@@ -11,6 +11,7 @@ Porte d'entrée de la branche League of Legends : le suivi de patch de Moh Amed,
 
 ## Notes de cette branche
 
+- [[LoL — Analyse compte — 2026-09-27]] — état du compte, pool réel, défaut n°1 (6,0 morts/partie), plan de la semaine
 - [[LoL — Veille patches]] — l'historique patch par patch, une ligne par version
 - [[LoL — Patch 26.19 — impacts]] — patch en cours (live depuis le 2026-09-23)
 

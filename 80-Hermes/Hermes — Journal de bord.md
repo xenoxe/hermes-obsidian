@@ -99,6 +99,18 @@ Ce que j'ai fait dans ce vault, dans l'ordre, avec la preuve. Retour : [[Hermes 
 - Ajout d'un point pratique qui aurait fait échouer la copie : **Obsidian masque les dossiers commençant par un point**. Les fichiers sont bien sur le disque et synchronisés par Git, mais invisibles dans l'interface — la notice de copie renvoie à l'Explorateur Windows.
 - Vérifié : les 34 fichiers sont suivis par git (aucune règle du `.gitignore` ne vise les dossiers en point) et le hook anti-secret est passé.
 
+## 2026-09-27
+
+### Profil « lol-coach » : coach League of Legends
+
+- Demande : un profil dédié pour progresser sur LoL — analyser ses comptes, suivre les patchs, conseiller champions/builds pour monter en elo, relié à un bot Telegram.
+- Créé avec `hermes profile create lol-coach --clone-from default` (clés du profil par défaut copiées, canaux de messagerie volontairement laissés de côté). Chemin : `/opt/data/profiles/lol-coach` ; SOUL, mémoire et profil utilisateur propres au profil.
+- 4 skills maison dans `skills/gaming/` : `lol-coaching` (méthode et format de livrable), `lol-riot-api` (API Riot + script `scripts/riot_fetch.py`, stdlib seulement), `lol-patch-watch` (veille et sources), `lol-draft-builds` (tier list, builds, counters).
+- Bot Telegram @xenoxe_lol_bot branché sur le profil ; **aucun redémarrage de gateway nécessaire** : le multiplexeur réconcilie les profils à chaud (~30 s, `run_profile_reconcile`).
+- Tâche planifiée `lol-patch-watch` (mardi et vendredi 10 h) : silencieuse si le patch est déjà traité, sinon note d'impact + message. Premier passage exécuté et **livré** (`delivery_outcome=delivered`).
+- **Vérifié** : script testé hors-ligne sur un jeu de données factice (agrégats, timelines) et sur les erreurs 401/403/404 ; `versions` → patch live 26.19 (= Data Dragon 16.19.1) ; skills chargés et réponse obtenue depuis le profil ; envoi Telegram sortant OK ; notes écrites dans `50-Connaissance/LoL/` (index, veille, patch 26.19, analyse de compte).
+- **Ouvert** : `RIOT_API_KEY` absente du `.env` du profil (clé de développement à régénérer toutes les 24 h) — sans elle, l'analyse de compte passe par deeplol.gg (source tierce) et la maîtrise par champion n'est pas mesurée via l'API. Le token du bot a transité dans le chat : à régénérer via BotFather puis à remettre dans le `.env`.
+
 ## Points ouverts
 
 - **Obsidian côté Windows** : l'installation du plugin Obsidian Git et le clone sont à confirmer côté PC (voir [[Hermes — Fonctionnement du vault]]).
