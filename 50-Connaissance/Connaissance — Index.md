@@ -9,6 +9,7 @@ Branche de connaissance du vault : elle regroupe **toute la veille technologique
 ## Les domaines
 
 - [[IA et agents — Index]] — agents de code, orchestration multi-agents, LLM, outils d'IA
+- [[LoL — Index]] — League of Legends : suivi des patches, impacts sur le pool de champions, fiches de build
 - *(à créer au fil de la veille : développement et outils, cloud et infrastructure, sécurité, produit et SaaS métier, data, web et référencement…)*
 
 ## Comment cette branche est rangée
@@ -41,3 +42,7 @@ Le suivi d'un projet en cours, les idées de contenu et les notes datées d'actu
 - [[Équipe complète de livraison — mode d'emploi]] — sept rôles, leurs refus, l'ordre d'exécution, le rituel de vérification
 - [[Équipe complète — configs Claude Code]] · [[Équipe complète — configs Cursor]] · [[Équipe complète — configs GitHub Copilot]] — les sept rôles en fichiers prêts à copier
 - [[AGENTS.md — le contrat commun aux agents]] — le contrat unique lu par tous les agents : sections, frontières à trois niveaux, modèle et exemple
+
+### League of Legends
+- [[LoL — Veille patches]] — l'historique des patches traités (une ligne par version)
+- [[LoL — Patch 26.19 — impacts]] — le patch en cours : ce qui touche le pool jungle, quoi jouer, quoi laisser
