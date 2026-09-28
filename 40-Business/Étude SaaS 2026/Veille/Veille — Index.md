@@ -20,6 +20,7 @@ Veille hebdomadaire du créneau retenu : **l'échéancier de conformité opposab
 ## Notes hebdomadaires
 
 - [[Veille — 2026-09-26]] — 26 septembre 2026 · ALERTE : offre unifiée VGP-DUERP détectée à 0,50 €/équipement.
+- [[Veille — 2026-09-28]] — 28 septembre 2026 · Campagne de contrôle de l'inspection du travail jusqu'en novembre, CAPEB × Costructor.
 
 ## Règle d'écriture
 
