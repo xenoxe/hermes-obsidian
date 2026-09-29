@@ -25,7 +25,7 @@ Retour : [[Sauvage Peinture — Fiche]] · [[Houplines — Index]] · [[Prospect
 
 Bonjour,
 
-En cherchant un peintre à Houplines, je suis tombé sur votre fiche légale (SIREN 808 604 862, 41 rue Voltaire) et sur un annuaire tiers qui résume votre activité à 3,5 sur 5, en quatre avis. Pour une entreprise de votre taille, c'est peu : il n'existe aucun site à vous où l'on voit vos prestations, vos chantiers et où l'on demande un devis.
+En cherchant un peintre à Houplines, je suis tombé sur votre fiche légale (SIREN 808 604 862, 41 rue Voltaire) et sur un annuaire tiers qui résume votre activité à 3,5 sur 5, en quatre avis. Pour une entreprise de votre taille, c'est peu : aucun site à vous ne montre vos prestations, vos chantiers ni de quoi demander un devis.
 
 Je crée des sites vitrines pour des commerces et artisans de Houplines. Je vous en prépare un gratuitement, sur une adresse du type sauvage-peinture.fr : vos prestations, votre zone d'intervention, des photos de chantiers, un formulaire de demande de devis et un bouton pour vous appeler. Rien à installer, rien à signer, rien à payer pour le voir : vous ouvrez le lien, et s'il vous convient vous le gardez. Le tarif, si vous le gardez, vous est annoncé avant toute mise en ligne.
 
@@ -36,7 +36,7 @@ Vos coordonnées viennent de votre fiche professionnelle publique ; conformémen
 Bien à vous,
 <Signature à compléter — nom, entreprise, téléphone, email>
 
-*Corps mesuré : 181 mots (cible 120-180).*
+*Corps mesuré : 178 mots (cible 120-180).*
 
 ## Variante B — commerçant actif sur Facebook ou Instagram
 
