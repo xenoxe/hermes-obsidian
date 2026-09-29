@@ -156,7 +156,7 @@ Données de dimensionnement SigNoz (documentation officielle et mesures publiée
 
 ### 7.1 Dokploy — conflit frontal, recommandation : ne pas l'installer
 
-**Dokploy embarquе et pilote son propre Traefik**, et **n'offre aucune option pour utiliser un reverse-proxy existant ou le désactiver** : la demande de fonctionnalité est ouverte et non implémentée (Dokploy/dokploy#4307), et la limitation est documentée par des tiers (« It's Traefik or nothing »). Or sur cette VM, **Traefik occupe déjà 80 et 443 en mode hôte** et sert des certificats Let's Encrypt valides. Installer Dokploy revient à mettre deux reverse-proxies sur les mêmes ports.
+**Dokploy embarque et pilote son propre Traefik**, et **n'offre aucune option pour utiliser un reverse-proxy existant ou le désactiver** : la demande de fonctionnalité est ouverte et non implémentée (Dokploy/dokploy#4307), et la limitation est documentée par des tiers (« It's Traefik or nothing »). Or sur cette VM, **Traefik occupe déjà 80 et 443 en mode hôte** et sert des certificats Let's Encrypt valides. Installer Dokploy revient à mettre deux reverse-proxies sur les mêmes ports.
 
 À cela s'ajoutent : ~2 Go de RAM et un PostgreSQL + Redis supplémentaires sur une machine déjà à 2,2 Go de moyenne ; un second plan de contrôle à sécuriser ; et un accès complet au socket Docker.
 
