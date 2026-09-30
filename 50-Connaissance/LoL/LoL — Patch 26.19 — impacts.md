@@ -6,7 +6,7 @@ date_verification: 2026-09-27
 
 # LoL — Patch 26.19 — impacts
 
-Date de vérification : 2026-09-27 · Patch live : 26.19 (Data Dragon 16.19.1) · Sorti le 2026-09-23 (notes FR publiées le 22)
+Date de vérification : 2026-09-27 · **Revérifié le 2026-09-30** (wiki V26.19 relu en entier : liste des champions identique) · Patch live : 26.19 (Data Dragon 16.19.1) · Sorti le 2026-09-23 (notes FR publiées le 22)
 Compte : **x3nøx3#EUW**, EUW, Silver 1 (32 V / 31 D, 66 LP) · Rôle : jungle
 Voir aussi : [[LoL — Veille patches]]
 
@@ -24,6 +24,37 @@ Voir aussi : [[LoL — Veille patches]]
 - Poppy : Q plafonné sur les monstres **85-225 → 70-210** (clear plus lent)
 - Rumble : plafond monstres **65-150 → 90-175** (clear plus rapide) mais vitesse d'attaque en surchauffe **50-130 % → 30-100 %**
 - Nocturne nerfé : R **140-90 s → 160-100 s** · Vi mitigée : AD de base **63 → 61** mais AD par niveau **3,5 → 3,9**, bouclier **12 % → 10 %** des PV max
+
+## Le patch complet (26.19, Faille de l'invocateur)
+
+Liste intégrale relue sur le wiki le 2026-09-30 — pour que cette note reste la référence du patch, pas seulement de ton pool.
+
+**Jungle**
+- Kha'Zix : *Menace invisible* **17-136 → 22-141**, Q évolué ralentit **2 → 2,25 s**, E évolué portée **200 → 300**
+- Lillia : armure de base **22 → 24**, R *Berceuse* sommeil **2 → 2,5 s**
+- Master Yi : Q — la réduction de recharge sur les attaques **n'est plus réduite par la hâte de compétence**
+- Nocturne : R *Paranoïa* **140 / 115 / 90 s → 160 / 130 / 100 s**
+- Elise : R **12 / 22 / 32 / 42 → 14 / 24 / 34 / 44**, W vitesse d'attaque **60-120 % → 70-130 %**
+- Poppy : Q plafond sur les monstres **85 / 120 / 155 / 190 / 225 → 70 / 105 / 140 / 175 / 210**
+- Rumble : vitesse d'attaque en surchauffe **50-130 % → 30-100 %**, plafond monstres **65-150 → 90-175**
+- Vi : AD de base **63 → 61**, AD par niveau **3,5 → 3,9**, bouclier **12 % → 10 %** des PV max
+
+**Autres voies**
+- Aatrox : E **20 / 18 / 16 / 14 / 12 → 18 / 16,5 / 15 / 13,5 / 12 s**, soin de R **1,1 % → 1,3 %** par 100 PV bonus
+- Aphelios : Q **70-160 → 80-170**, soins *Severum* revus à la hausse, *Duskwave* **9-6 → 8-5 s**, *Crescendum* **15 % → 16 %** AD
+- Aurora : Q **70 / 110 / 150 / 190 / 230 → 80 / 120 / 160 / 200 / 240**, durée de R **1,75 / 2,5 / 3,25 → 2,25 / 2,75 / 3,25 s**
+- Camille, Nunu & Willump, Renata Glasc, Renekton, Taliyah, Yone, Yunara : **corrections de bugs uniquement**
+- Draven : AD de base **62 → 64**
+- Fiora : PV par niveau **99 → 105**, R portée de soin **550 → 600** et soin par tick **+6,7 %**
+- Lucian : passif **15 → 5** dégâts de base et ratio **20 % → 15 %** AD par tick, Q **80 / 115 / 150 / 185 / 220 → 90 / 130 / 170 / 210 / 250**
+- Nasus : Q **40 / 60 / 80 / 100 / 120 → 30 / 50 / 70 / 90 / 110**
+- Ryze : armure par niveau **4,2 → 4,7**, E dégâts bonus de Flux **25-100 % → 15-90 %**, W coût mana **+5**
+- Volibear : passif ratio AP **3 → 4 %** par 100 AP (**max 15 → 20 %**), et les griffes scalent désormais aussi sur **20 % AD bonus**
+
+**Objets et système**
+- Runic Compass : PV **100 → 60**, régénération de PV de base **50 % → 75 %** · World Atlas : PV **30 → 0**, régénération **25 % → 50 %** (items de support)
+- Quête de voie du haut : Téléportation **420 s → 390 s**, et Téléportation libérée **-30 s**
+- Divers : corrections de bugs (clones et Retour à la base, « cibler uniquement les champions », caméra de Nunu) · Practice Tool : cheat « Stack Item » étendu
 
 ## Ce que tu joues cette semaine
 
@@ -51,7 +82,7 @@ Victoires : **4,56 morts** en moyenne · Défaites : **7,25 morts** en moyenne, 
 
 ## Sources
 
-- wiki LoL, V26.19 (contenu chiffré des notes) : https://wiki.leagueoflegends.com/en-us/V26.19 (consulté le 2026-09-27)
+- wiki LoL, V26.19 (contenu chiffré des notes) : https://wiki.leagueoflegends.com/en-us/V26.19 (consulté le 2026-09-27, **relu en entier le 2026-09-30** : section Champions, Objets et Système extraite telle quelle, sans résumé intermédiaire)
 - Notes officielles FR 26.19 : https://www.leagueoflegends.com/fr-fr/news/game-updates/league-of-legends-patch-26-19-notes/ (publiées le 2026-09-22)
 - Patch live : Data Dragon `versions.json` → 16.19.1 (= 26.19), lu via `riot_fetch.py versions` le 2026-09-27
 - Winrates : lolalytics.com, onglet All Ranks, voie jungle, par champion (shyvana, briar, warwick, masteryi, lillia), relevé le 2026-09-27
