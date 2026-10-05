@@ -21,6 +21,7 @@ Veille hebdomadaire du créneau retenu : **l'échéancier de conformité opposab
 
 - [[Veille — 2026-09-26]] — 26 septembre 2026 · ALERTE : offre unifiée VGP-DUERP détectée à 0,50 €/équipement.
 - [[Veille — 2026-09-28]] — 28 septembre 2026 · Campagne de contrôle de l'inspection du travail jusqu'en novembre, CAPEB × Costructor.
+- [[Veille — 2026-10-05]] — 5 octobre 2026 · Amende DUERP cantonnée au seul cas d'absence ; Provigis retire ses prix publics.
 
 ## Règle d'écriture
 

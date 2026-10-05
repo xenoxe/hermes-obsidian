@@ -35,7 +35,7 @@ tags: [business, etude, saas, hostinger]
 **Créneau retenu : l'échéancier de conformité opposable pour l'artisanat du bâtiment (1 à 20 salariés).**
 Un produit unique qui, à partir du SIREN et du métier, génère le calendrier des obligations à périodicité (VGP et vérifications de levage, extincteurs, électricité, chaudières et fluides frigorigènes, DUERP, habilitations et recyclages SST/électrique/CACES, registres, tri des déchets, vigilance sous-traitance), alerte avant échéance, archive les procès-verbaux dans un dossier de preuve exportable en un clic, et se met à jour quand la règle change.
 
-**Pourquoi celui-là** : le déclencheur est daté et vérifié (sanction DUERP jusqu'à 4 000 € par manquement depuis la loi du 25 juin 2026), la cible est la plus large du panel (621 803 entreprises artisanales du bâtiment, CAPEB), la disposition à payer est prouvée **par briques** (19 à 99 € HT/mois) et le canal existe : la CAPEB distribue déjà une IA métier à 29,95 € HT/mois à ses adhérents — donc un abonnement de cet ordre y est vendable.
+**Pourquoi celui-là** : le déclencheur est daté et vérifié (sanction administrative d'**absence** de DUERP — jusqu'à 4 000 € par salarié concerné, applicable depuis le 27 juin 2026), la cible est la plus large du panel (621 803 entreprises artisanales du bâtiment, CAPEB), la disposition à payer est prouvée **par briques** (19 à 99 € HT/mois) et le canal existe : la CAPEB distribue déjà une IA métier à 29,95 € HT/mois à ses adhérents — donc un abonnement de cet ordre y est vendable.
 
 ### ⚠️ Correctif du 26/09/2026 — un acteur couvre déjà l'ensemble
 
