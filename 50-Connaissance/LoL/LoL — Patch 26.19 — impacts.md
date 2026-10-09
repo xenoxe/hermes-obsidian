@@ -61,6 +61,7 @@ Liste intégrale relue sur le wiki le 2026-09-30 — pour que cette note reste l
 - **Briar en premier choix** : 52,49 % de winrate (370 737 parties, tier S, rang 3/79) et c'est ton meilleur taux personnel sur le mois (63 % sur 8 parties). Rien n'a bougé dessus.
 - **Shyvana en filet de sécurité** : 52,92 % (69 437 parties, A-, rang 24/79) — c'est ton plus gros volume de jeu (18 parties, 56 %) et elle est intacte.
 - **Lillia : le bon choix face à un Master Yi ennemi** — 51,87 % de winrate (129 882 parties, A+, rang 13/82), buffée sur deux lignes (armure de base, sommeil de R). lolalytics la classe parmi les championnes les plus battues par Master Yi, donc si l'adversaire prend Yi, c'est une réponse chiffrée.
+  - **Correctif du 2026-10-09** : cette ligne retournait le sens du counter. lolalytics liste Lillia parmi les champions **battus par** Master Yi (« countered most by Quinn, Master Yi & Briar »), donc Lillia est un **mauvais** appariement contre Yi, pas une réponse. Ne pas s'en servir comme counterpick. Voir [[LoL — Patch 26.20 — impacts]] pour le relevé corrigé.
 - **Master Yi à surveiller** : 50,11 % (734 895 parties) — le winrate le plus bas de ton pool, avec un nerf qui vient de tomber. Ne le prends pas par défaut cette semaine.
 
 ## Ce que tu arrêtes (temporairement)
