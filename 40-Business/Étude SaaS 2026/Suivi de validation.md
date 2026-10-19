@@ -50,6 +50,8 @@ Objectif : **20 entretiens artisans + 5 canaux**. Questions : que s'est-il pass�
 | Pré-commandes payantes en 14 jours | 0 → arrêt | |
 | Offre unifiée concurrente ≤ 39 €/mois | trouvée → arrêt | |
 | Canal intéressé après 5 rendez-vous | 0 → arrêt | |
+| Cloud VGP couvre DUERP + vigilance + registres du personnel pour les TPE (J0) | vrai → arrêt | |
+| confformia couvre aussi la vigilance sous-traitance / l'attestation URSSAF (J0) | vrai → arrêt | |
 
 **Décision** :
 

@@ -76,7 +76,7 @@ Coûts : le VPS et Traefik existent déjà ; compter 100 à 400 €/mois (emails
 
 | Quand | Quoi | Qui fait |
 |---|---|---|
-| **J0 — 1 h** | **Qualifier Cloud VGP** en essai gratuit : leur « DUERP » est-il un registre exportable et daté, ou un agent conversationnel ? La vigilance URSSAF et les registres du personnel sont-ils couverts ? Qui répond au support d'un client à 5 €/mois ? | Moh Amed |
+| **J0 — 2 h** | **Qualifier les deux acteurs qui encadrent la promesse**, en essai gratuit (plan gratuit de confformia, essai de Cloud VGP) : ① **confformia** — la vigilance sous-traitance et l'attestation de vigilance URSSAF sont-elles couvertes, ou seulement les attestations internes du salarié ? les périodicités « équipement » tiennent-elles le **levage à 6 mois**, les extincteurs et les fluides frigorigènes, ou seulement échafaudage/nacelle/chariots/électricité ? le ZIP « contrôle inspection » est-il un dossier exploitable ? qui répond au support d'un client à 29 €/mois ? ② **Cloud VGP** — leur « DUERP » est-il un registre exportable et daté, ou un agent conversationnel ? la vigilance URSSAF et les registres du personnel sont-ils couverts ? qui répond au support d'un client à 5 €/mois ? | Moh Amed |
 | J1-J2 | Lister 150 artisans cibles + 30 contacts de canaux. Page d'atterrissage avec les 3 offres et une pré-commande à −50 % pour les 20 premiers | Moh Amed + Hermes (liste, page, textes) |
 | J3-J7 | **20 entretiens de 20 minutes** + 5 entretiens de canal. Script en 5 questions : que s'est-il passé lors de votre dernier contrôle ? qui suit vos échéances aujourd'hui ? que se passe-t-il si vous en manquez une ? combien payez-vous déjà pour ça ? quel serait le montant acceptable ? | Moh Amed (l'entretien ne se délègue pas) |
 | J8-J10 | **Démonstration à la main** : pour 10 volontaires, produire leur calendrier d'obligations et leur dossier de conformité PDF à partir du SIREN, sans produit | Hermes (recherche + génération) |
@@ -88,6 +88,7 @@ Coûts : le VPS et Traefik existent déjà ; compter 100 à 400 €/mois (emails
 3. Découverte d'un acteur qui couvre déjà l'ensemble à 39 €/mois ou moins
 4. Zéro canal intéressé après 5 rendez-vous — auquel cas le modèle à 30 €/mois ne tient pas avec un solo
 5. **Cloud VGP (ou équivalent) couvre le DUERP comme un registre exportable, la vigilance et les registres du personnel, avec un support joignable pour les TPE** → la différenciation retenue tombe, on bascule sur le plan B sans chercher à rivaliser sur le prix
+6. **Ajouté le 19/10/2026 — confformia (29 € HT/mois) ou un équivalent s'avère couvrir aussi la vigilance sous-traitance / l'attestation de vigilance URSSAF, ou s'avère déjà utilisé par des artisans du bâtiment pour cet usage** → il ne reste plus aucun terrain libre sous 39 €/mois : on ne construit pas, et on ne cherche pas à battre un acteur établi sur son propre périmètre. Test : plan gratuit de confformia, une heure, avant les entretiens
 
 **Si le test est vert** : construire la v1 en 6 semaines, objectif 10 clients payants en bêta, puis 100 clients en 6 mois.
 
@@ -100,7 +101,7 @@ Coûts : le VPS et Traefik existent déjà ; compter 100 à 400 €/mois (emails
 
 | Risque | Parade |
 |---|---|
-| **Un acteur couvre déjà l'ensemble moins cher que mon offre** (Cloud VGP, 0,50 €/équipement/mois, gratuit sous 13 500 € de CA) | Ne jamais se battre sur le prix : se différencier sur le registre salarié et documentaire, et sur le canal. Leur API est ouverte — l'intégration (être la couche « inspection du travail » branchée sur leur parc) est une option moins risquée que la concurrence frontale, et elle se teste en un appel |
+| **Un acteur couvre déjà l'ensemble moins cher que mon offre** — Cloud VGP (0,50 €/équipement/mois, gratuit sous 13 500 € de CA) **et, depuis le 19/10/2026, confformia : 29 € HT/mois pour DUERP + registre du personnel + habilitations + registre VGP + dossier d'inspection, avec palier gratuit** | Ne plus se battre sur le périmètre large : se recentrer sur ce que ni l'un ni l'autre ne couvre — la **vigilance sous-traitance** (attestation URSSAF ≥ 5 000 € HT, contrats loi 75-1334) et le **canal**. Qualifier les deux en essai gratuit (J0) avant d'engager une heure de plus : si l'un des deux couvre la vigilance sous-traitance, on ne construit pas (critère d'arrêt n° 6). L'API de Cloud VGP est ouverte : l'intégration reste l'option la moins risquée si le test est négatif |
 | Les acteurs par brique (Duerp APP, GContact, BatiFire) étendent vers l'échéancier global | Verrouiller le canal et la profondeur par métier avant eux ; viser les centrales d'achat et les fédérations |
 | La CAPEB donne le DUERP gratuitement et pourrait donner l'échéancier | Ne jamais vendre le DUERP : vendre la **preuve** et le **dossier de contrôle** multi-obligations, que les outils gratuits ne produisent pas |
 | Les artisans n'achètent pas par conviction, seulement sous contrainte | Vendre juste après un déclencheur : contrôle, refus de chantier, refus d'attestation, sinistre, mise en demeure |
