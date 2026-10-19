@@ -29,17 +29,19 @@ Retour : [[Étude SaaS — Index]] · 10 créneaux examinés le 26/09/2026.
 
 **Conséquence sur la notation** : le critère « faiblesse de la concurrence » passe de 3 à 2 et le créneau de 32 à **31/40** — l'écart avec les auto-écoles (29/40) devient mince, ce qui doit se dire plutôt que se lisser. Le critère d'arrêt n° 3 (« offre unifiée ≤ 39 € HT/mois ») est **déclenché sur le prix** ; à qualifier en une heure d'essai gratuit avant tout développement.
 
+**Correctif du 19/10/2026 — la différenciation survivante a été occupée à son tour.** confformia (éditeur français) affiche publiquement un plan **Essentiel à 29 € HT/mois** couvrant le registre du personnel, le registre de sécurité VGP (périodicités pré-remplies et alertes : extincteurs, chariots élévateurs, installations électriques), les habilitations, les visites médicales et un mode « contrôle inspection » qui compile un ZIP prêt pour l'inspection du travail, plus un **plan gratuit sans limite de durée** (DUERP illimité, conservation 40 ans), avec une page dédiée au BTP et à l'artisanat. Le « versant salarié et documentaire » retenu en septembre comme différenciation **n'est donc plus libre**. Le critère « faiblesse de la concurrence » passe de **2 à 1** et le créneau de 31 à **30/40** — l'écart avec les auto-écoles (29/40) tombe à **un point**, c'est-à-dire dans le bruit. Le créneau n'est plus recommandé *par avance* : il est recommandé **sous condition** du J0 (qualification de confformia et de Cloud VGP en essai gratuit, critère d'arrêt n° 6) **et** de l'obtention d'un canal fédéral, avec la vigilance sous-traitance comme seul terrain clairement libre.
+
 | Critère | Note | Commentaire |
 |---|---|---|
 | Marché accessible | 5 | 621 803 entreprises artisanales du bâtiment |
 | Déclencheur daté | 5 | Sanction DUERP en vigueur, VGP et vigilance périodiques, e-facturation 2027 |
 | Disposition à payer | 3 | Prouvée par briques, **non prouvée pour le bundle** |
-| Faiblesse concurrence | 2 | Chaque brique occupée, et Cloud VGP couvre déjà l'ensemble à 0,50 €/équipement |
+| Faiblesse concurrence | 1 | Chaque brique occupée ; Cloud VGP à 0,50 €/équipement depuis sept., puis **confformia à 29 € HT/mois** (DUERP + registre du personnel + habilitations + registre VGP + ZIP d'inspection) avec palier gratuit, vérifié le 19/10/2026 |
 | Défendabilité solo | 4 | Règles métier + intégrations + preuve horodatée = pas copiable en un prompt |
 | Canal | 4 | CAPEB, FFB, assureurs, experts-comptables, distributeurs matériel |
 | Délai 1er euro | 4 | Vente possible en direct dès la V1 |
 | Risque réglementaire | 4 | Obligations existantes et renforcées, pas de report possible |
-| **Total** | **31/40** | |
+| **Total** | **30/40** | |
 
 ## 2. Auto-écoles — deuxième choix
 
@@ -115,7 +117,7 @@ Besoin réel (nettoyage SIREN/SIRET, surveillance de l'annuaire, supervision des
 
 | Rang | Créneau | Total |
 |---|---|---|
-| 1 | Échéancier de conformité opposable — artisanat du bâtiment | **31/40** |
+| 1 | Échéancier de conformité opposable — artisanat du bâtiment | **30/40** |
 | 2 | Auto-écoles | 29/40 |
 | 3 | Pompes funèbres | 26/40 |
 | 4 | Syndics bénévoles | 25/40 |

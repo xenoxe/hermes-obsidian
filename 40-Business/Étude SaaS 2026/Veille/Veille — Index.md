@@ -23,6 +23,7 @@ Veille hebdomadaire du créneau retenu : **l'échéancier de conformité opposab
 - [[Veille — 2026-09-28]] — 28 septembre 2026 · Campagne de contrôle de l'inspection du travail jusqu'en novembre, CAPEB × Costructor.
 - [[Veille — 2026-10-05]] — 5 octobre 2026 · Amende DUERP cantonnée au seul cas d'absence ; Provigis retire ses prix publics.
 - [[Veille — 2026-10-12]] — 12 octobre 2026 · Sanctions e-facturation vérifiées ; le DUERP bas de gamme se commoditise.
+- [[Veille — 2026-10-19]] — 19 octobre 2026 · ALERTE : confformia vend l'ensemble à 29 € HT/mois, palier gratuit inclus.
 
 ## Règle d'écriture
 
